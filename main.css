@@ -1,0 +1,591 @@
+body{
+    width:100%;
+    padding:0;
+    margin:0;
+    background:white;
+}
+.row {  
+    display: flex;
+    flex-wrap: wrap;
+}
+.no-bottom-margin{
+    margin-bottom:0.2%;
+}
+.no-top-margin{
+    margin-top:0.2%;
+}
+.cf::after{
+    content: "";
+    display:table;
+    clear:both;
+}
+.lefthalf{
+    float:left;
+    width:50%;
+
+}
+.righthalf{
+    float:right;
+    width:50%;
+}
+.leftthird{
+    float:left;
+    width:33%;
+}
+.quarter{
+    width:25%;
+}
+@font-face{
+    font-family: Trajan;
+    src:url(./resources/TRAJANUS.TTF);}
+@font-face{
+    font-family: LogoFont;
+    src:url(./resources/SCRIPTIN.ttf);
+}
+@font-face{
+    font-family: SublogoFont;
+    src:url(./resources/VESPASIAN_TIMES.ttf);
+}
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 98%;
+    padding:1%;
+}
+#vrhstranice{
+    background-image: url("./resources/Optimized-HGM_-_Stiegenhaus_0342_3_4_5_6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex:98%;
+    height:100%;
+}
+.head{
+    display:flex;
+    flex-direction: row;
+    float:left;
+    flex:35%;
+    flex-direction: row;
+    align-content: flex-start;
+}
+.logo{
+    display:flex;
+    float:left;
+    justify-content: center;
+    margin-top:6%;
+    margin-right: 1.0%;
+    margin-left:0.7%;
+}
+#slikalogo{
+    margin-top:20px;
+    height:50px;
+    width:50px;
+
+}
+.logo img{
+    margin-top:2%;
+    margin-right: 1.7%;
+    height:30px;
+    width:30px;
+    
+}
+.Logonatpisa h1{
+    float:left;
+    font-family: LogoFont;
+    margin-top:4%;
+    color:white;
+    font-size: 1.5vw
+}
+.navigation{
+    float:right !important;
+    flex:60%;
+}
+.navigacija{
+    flex:90%;
+    margin-right: 2%;
+}
+.menu{
+    list-style-type: none;
+    display:block;
+    flex-direction: row;
+    float:right;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left:0;
+    padding-right:2%;
+    width:100%;   
+}
+.menu li{
+    float:left;
+    padding: 0 2%;
+    margin-right:2%;
+    flex:96%;
+}
+.navigationbutton a{
+    float:left;
+    flex: 98%;
+    text-decoration: none;
+    text-align: center;
+    color:white;
+    padding:0% auto;
+    margin:1%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1vw;
+    font-weight: bolder;
+}
+.menu li :hover {
+    color:blue;
+    background-color: rgb(255, 220, 104);
+}
+
+.testnalista{
+    display:none;
+    padding-left:0;
+}
+.dropdown:hover .testnalista{
+    position:absolute;
+    color:royalblue;
+    clear:both;
+    display:block;
+    margin-top:1%;
+    margin-right:0%;
+    padding-right:0;
+    background-color: rgba(255, 220, 104,0.1);
+    justify-content: baseline;
+    flex-direction:column;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.dropdown:hover .buttontestneliste{
+    padding-top:2%;
+    margin:2% 0;
+    padding-right:0;
+    margin-right:0;
+}
+.container {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.container .textuslici{
+    position: absolute;
+    bottom: 1%;
+    left:1%;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    width: 100%;
+    padding: 2%;
+}
+.textnacentru{
+    clear:both;
+    margin: 25% 5%;
+    text-align: left;
+    color:white;
+    text-align: justify;
+}
+.textnacentru h2{
+    font-family: LogoFont;
+    font-size: 3vw;
+}
+.textnacentru p{
+    font-family:'Courier New', Courier, monospace;
+    font-size:1.5vw;
+}
+.prvidiv{
+    flex:98%;
+    margin-top: 1%;
+    margin-right:0%;
+    padding:1%;
+    background: rgba(138, 139, 146, 0.9);
+    float:left;
+}
+.pozdravnidiv{
+    float:left;
+    flex:100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.pozdravnaslika{
+    flex:50%
+}
+.pozdravnaslika img{
+    width: 40%;
+    height:30%;
+    float:left;
+    border-radius: 5%;
+    margin-right:2%;
+}
+.pozdravnaslika p{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9em;
+    transform: translate(-50%, -50%);
+    color:black;
+}
+.pozdravnidiv{
+    flex:50%;
+}
+.pozdravnidiv h3{
+    font-size:2em;
+    text-align: center;
+    justify-content: center;
+    font-family: LogoFont;
+    color:#E8F0CB;
+    margin-top:0.2%;
+}
+.pozdravnitext p{
+    font-size: 1.1em;
+    font-family:Trajan;
+    text-align: center;
+    color: white;
+}
+.poztxt-prvired{
+    margin-top:0;
+}
+.pozdravnitext li{
+    font-size: 1.2em;
+    font-family: SublogoFont;
+    text-align: center;
+    color:rgb(255, 220, 104);
+    list-style: none;
+}
+.drugidiv{
+    float:left;
+    width:96%;
+    padding:2%;
+    margin-top:2%;
+    background: rgba(63, 81, 164, 0.4);
+}
+.predstavljanjeprojekta h3{
+    text-align: center;
+    font-family: LogoFont;
+    font-size:2em;
+    color: white;
+}
+.predstavljanjeprojekta p{
+    font-size: 1.1em;
+    font-family:Trajan;
+    text-align: center;
+    color: white;
+}
+.muzeji-bitke-gradjevine-lokacije{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top:1%;
+}
+.muzeji-bitke-gradjevine-lokacije .img-benefits{
+    float:left;
+    flex:25%;
+    text-align: center;
+}
+.muzeji-bitke-gradjevine-lokacije .img-benefits img{
+    width:100px;
+    height:100px;
+}
+.muzeji-bitke-gradjevine-lokacije .img-benefits h4{
+    text-align: center;
+    font-size:1em;
+    color: white;
+}
+.hundos{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top:1%;
+}
+#support-addition{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top:1%;
+}
+#support-addition .img-benefits{
+    float:left;
+    flex:25%;
+    text-align: center;
+}
+#support-addition .img-benefits img{
+    width:100px;
+    height:100px;
+}
+#support-addition .img-benefits h4{
+    text-align: center;
+    font-size:1em;
+    color: white;
+}
+#support-addition .img-benefits a{
+    text-decoration: none;
+    color:rgb(255, 220, 104);
+}
+.dugme{
+    background-color: rgba(63, 81, 164, 0.8);
+    border: none;
+    color: white;
+    padding: 2% 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1em;
+    width:30%;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    }
+.dugme:hover{
+    background: white;
+    color:rgba(63, 81, 164, 0.8);
+}
+#trecidiv{
+    float:left;
+    width:98%;
+    padding:1%;
+    margin-top:2%;
+    background: rgba(138, 139, 146, 0.9); 
+}
+.flex-trecina{
+    display: flex;
+    float:left;
+    flex-direction: column;
+    flex:28%;
+    height:100%;
+    padding:1%;
+    justify-content:center;
+    align-items: center;
+}
+.naslovh3{
+    font-family: LogoFont;
+    font-size: 2em;
+    color:white;
+    text-align: center;
+    justify-content: center;
+}
+#trecidiv p{
+    font-family: Trajan;
+    font-size: 1em;
+    text-align:center;
+    color:white;
+}
+#cetvrtidiv{
+    display:flex;
+    float:left;
+    width:98%;
+    padding:1%;
+    margin-top:2%;
+    background: rgba(63, 81, 164, 0.4);
+}
+#cetvrtidiv img{
+    float:left;
+    width:98%;
+    height:70%;
+    padding:1%;
+    border-radius: 5%;
+}
+#testnidiv{
+    float:left;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:98%;
+    height:28%;
+    padding:1%;
+}
+#cetvrtidiv h3{
+    font-family: LogoFont;
+    color:white;
+    font-size:2em;
+    text-align: center;
+    justify-content: center;
+    margin:auto;
+}
+.testnidiv{
+    flex:100%;
+    flex-wrap: wrap;
+}
+.testnidiv p{
+    margin:0% auto;
+    font-family:Trajan;
+    font-size: 1.5em;
+    color:white;
+    text-align:center;
+}
+.testnidiv form{
+    clear: both;
+    flex:100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    margin:1% auto;
+    padding:1% auto;
+}
+#submitemail{
+    float:left;
+    flex:40%;
+    background-color:#3E3175;
+    border: none;
+    color: white;
+    padding: 2% 1%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: bold;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 8px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+#submitemail:hover{
+    background: white;
+    color:#3E3175;
+}
+#emailform{
+    float:left;
+    height:35%;
+    flex:50%;
+    padding:1%;
+}
+.footer{
+    display:flex;
+    float:left;
+    width:98%;
+    padding:1%;
+    margin-top:0.5%;
+    background: #111B2D;
+}
+.opis{
+    clear:both;
+    float:left;
+    width:98%;
+    height:28%;
+    padding:0 1%;
+}
+.footer p{
+    margin:auto;
+    text-align: center;
+    color: antiquewhite;
+    opacity: 0.3;
+    font-size: 0.6em;
+}
+.slikazatext{
+    width: 98%;
+    height:98%;
+    border-radius: 2%;
+}
+.prvidiv h3{
+    align-items: center;
+    width:100%;
+}
+.container .textuslici{
+    bottom: 3%;
+    left:2%;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    width: 90%;
+    padding: 3%;
+}
+.naslov1{
+    width:100%;
+    align-items: center;
+    justify-content: center;
+}
+.textuslici p{
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1vw;
+}
+.textuslici p[class="naslovh3"]{
+    font-weight: bold;
+    font-family: Trajan;
+    font-size: 2vw;
+    text-align: Justify;
+}
+.textdiv{
+    float:left;
+    flex:100%;
+    flex-direction:column;
+}
+.textdiv img{
+    float:left;
+    flex: 40%;
+    width:40%;
+    height:40%;
+}
+.listaponude{
+    color:white;
+    font-size: 1vw;
+    font-weight: 500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pricetag{
+    font-weight: bolder;
+    color:navy;
+    justify-content: center;
+    align-items: center;
+}
+.divkontakta{
+    display:flex;
+    width:98%;
+    float:left;
+    flex-direction:column;
+    flex-wrap: wrap;
+    padding:1%;
+    background-color: #111B2D;
+}
+.label{
+    display: flex;
+    float:left;
+    flex:23%;
+    width:20%;
+    padding:1% 1% 1% 0;
+    margin-right: 1%;
+    color:white;
+}
+.input{
+    display: flex;
+    float:left;
+    width:67%;
+    padding:1%;
+  
+}
+.quarter{
+    float: left;
+    width: 25%;
+    margin: 1%;
+}
+.triquarter{
+        float: left;
+        width: 75%;
+        margin-top: 1%;
+}
+form{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.kontaktinfo p{
+    color:white;
+    padding:1%;
+    margin:0;
+    width:25%;
+}
+.kontaktinfo h4{
+    color:white;
+    padding:1%;
+    margin:0;
+    width:25%;
+    font-size:2vw;
+}
+
+
+
+
+
